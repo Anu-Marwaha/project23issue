@@ -29,7 +29,7 @@ function setup() {
 	helicopterSprite.addImage(helicopterIMG)
 	helicopterSprite.scale=0.6
 
-	groundSprite=createSprite(width/2, height-20, width,10);
+	groundSprite=createSprite(width/2, 680, width,10);
 	groundSprite.shapeColor=color(255)
 
 
@@ -41,7 +41,7 @@ function setup() {
 	
 
 	//Create a Ground
-	ground = Bodies.rectangle(width/2, height-20, width, 10 , {isStatic:true} );
+	ground = Bodies.rectangle(width/2, 680, width, 10 , {isStatic:true} );
  	World.add(myWorld, ground);
     box1=new Box(400,650,200,20);
 	box2=new Box(500,550,20,200);
